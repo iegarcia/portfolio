@@ -1,0 +1,27 @@
+/* Home */
+
+.content {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 94vh;
+  /* text-align: center; */
+}
+
+.iegarcia {
+  width: 65%;
+}
+
+.welcome {
+  font-family: "Verdana", sans-serif;
+  font-size: 50px;
+  animation: backInLeft;
+  animation-duration: 2s;
+}
+
+.role {
+  font-family: "Comic Sans MS", sans-serif;
+  font-size: 40px;
+  animation: backInRight;
+  animation-duration: 2s;
+}

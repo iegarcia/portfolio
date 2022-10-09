@@ -1,38 +1,36 @@
-.App {
-  text-align: center;
-}
+@import url("style/general.css");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@import url("style/home.css");
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@import url("style/about.css");
+
+@import url("style/skills.css");
+
+@import url("style/projects.css");
+
+@import url("style/contact.css");
+
+@media (min-width: 360px) and (min-height: 726px) {
+  .app-background,
+  .home-background {
+    height: unset;
+  }
+  .skills {
+    height: 103vh;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 360px) and (max-width: 1000px) {
+  .aboutImage {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (min-height: 763px) {
+  .app-background,
+  .home-background {
+    height: 94vh;
+  }
+
+  .projects {
+    height: unset;
   }
 }
