@@ -1,19 +1,21 @@
+import { useTranslation } from "react-i18next";
+
 import Container from "react-bootstrap/Container";
 
 import SkillsBox from "../components/SkillsBox";
 import Title from "../components/Title";
 
 const Skills = () => {
+  const { t } = useTranslation();
   return (
     <div className="app-background skills">
       <Container>
-        <Title text="Skills" />
-        <h2 className="light text-center skills-text">
-          I currently have the following set of skills and tools...
-        </h2>
+        <Title text="skills" />
+        <h2 className="light text-center skills-text">{t("current_skills")}</h2>
         <br />
         <SkillsBox />
-        <h2 className="light text-center skills-text">...and we go for more</h2>
+        <br />
+        <h2 className="light text-center skills-text">{t("future_skills")}</h2>
       </Container>
     </div>
   );

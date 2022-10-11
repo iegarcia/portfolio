@@ -1,7 +1,9 @@
+import { useTranslation } from "react-i18next";
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import { projects } from "../assets/projectsData";
 
 const ProjectsList = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Container>
@@ -9,7 +11,7 @@ const ProjectsList = () => {
           <Row xs={1} md={2} lg={3} xxl={4} className="g-4">
             {projects.map((p) => {
               return (
-                <Col key={p.title}>
+                <Col key={p.id}>
                   <Card
                     className="light text-center"
                     style={{ width: "18rem" }}
@@ -17,7 +19,7 @@ const ProjectsList = () => {
                     <Card.Img variant="top" src={p.image} alt={p.title} />
                     <Card.Body>
                       <Card.Title>{p.title}</Card.Title>
-                      <Card.Text>{p.description}</Card.Text>
+                      <Card.Text>{t(`project_${p.id}`)}</Card.Text>
                       <Button
                         className="btn-preview"
                         href={p.preview}

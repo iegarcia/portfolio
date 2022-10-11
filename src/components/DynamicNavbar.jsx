@@ -1,8 +1,6 @@
+import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
-import { Form } from "react-bootstrap";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import { Navbar, Nav, Container, Form } from "react-bootstrap";
 import { useLocation } from "react-router-dom";
 import Contact from "../views/Contact";
 
@@ -10,14 +8,30 @@ const logo = "<iegarcia />";
 
 const DynamicNavbar = () => {
   const location = useLocation();
+  const { i18n } = useTranslation();
 
   const [color, setColor] = useState("#FCFDFF");
   const [textColor, setTextColor] = useState("#000000");
 
   const [show, setShow] = useState(false);
+  const [value, setValue] = useState(
+    sessionStorage.getItem("switch") === "false" ? false : true
+  );
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const translate = (event) => {
+    if (i18n.language === "es") {
+      i18n.changeLanguage("en");
+      setValue(event.target.checked);
+      sessionStorage.setItem("switch", event.target.checked.toString());
+    } else {
+      i18n.changeLanguage("es");
+      setValue(event.target.checked);
+      sessionStorage.setItem("switch", event.target.checked.toString());
+    }
+  };
 
   useEffect(() => {
     if (location.pathname !== "/") {
@@ -58,8 +72,16 @@ const DynamicNavbar = () => {
               Contact
             </Nav.Link>
           </Nav>
+
           <Form>
-            <Form.Check type="switch" id="custom-switch" label="english" />
+            <Form.Check
+              type="switch"
+              id="custom-switch"
+              label="english"
+              onChange={translate}
+              style={{ color: textColor }}
+              checked={value}
+            />
           </Form>
         </Navbar.Collapse>
         <Contact show={show} close={handleClose} />

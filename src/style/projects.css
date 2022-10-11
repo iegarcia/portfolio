@@ -20,11 +20,15 @@
   background-color: #001ea9;
 }
 
-.btn-preview {
+.btn-preview,
+.btn-preview:hover,
+.btn-preview:focus {
   background-color: #62a900;
 }
 
-.btn-code {
+.btn-code,
+.btn-code:hover,
+.btn-code:focus {
   background-color: #a94700;
   margin-left: 15px;
 }
