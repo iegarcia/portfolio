@@ -16,7 +16,6 @@ const Projects = () => {
       <ProjectsList />
       <br />
       <h2 className="light text-center">{t("github")}</h2>
-      <br />
       <div className="d-flex justify-content-center">
         <a href="https://github.com/iegarcia" target="_blank" rel="noreferrer">
           <Button variant="secondary" className="github-btn">

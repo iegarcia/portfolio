@@ -24,7 +24,7 @@
     display: none;
   }
 }
-@media (min-height: 763px) {
+@media (min-height: 900px) {
   .app-background,
   .home-background {
     height: 94vh;

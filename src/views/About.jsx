@@ -8,6 +8,7 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 
 import aboutImage from "../assets/02.png";
+import Arrow from "../components/Arrow";
 
 const About = () => {
   const { t } = useTranslation();
@@ -26,7 +27,6 @@ const About = () => {
             <p className="light about-text">{t("about_text_3")}</p>
             <p className="light about-text">{t("about_text_4")}</p>
             <p className="light about-text">{t("about_text_5")}</p>
-            <br />
             <a
               href="https://1drv.ms/b/s!AnSV9i10O1Twg5JHp072KRPaxvmXIQ"
               target="_blank"
@@ -36,6 +36,8 @@ const About = () => {
             </a>
           </Col>
         </Row>
+        <br />
+        <Arrow link="projects" />
       </Container>
     </div>
   );
