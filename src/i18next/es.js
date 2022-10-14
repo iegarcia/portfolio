@@ -6,7 +6,7 @@ export const esp = {
   about_text_2:
     "Soy un desarrollador full stack, en busca de nuevos retos y experiencias como tal, obtuve mis conocimientos en Digital House, el instituto ORT y también por méritos propios.",
   about_text_3:
-    "En DH profundicé mi conocimiento de idiomas, aumentando mi amor por el desarrollo (particularmente por el frontend), pero no me caso con ningún idioma, es lo bueno de ser 'todo terreno.",
+    "En DH profundicé mi conocimiento en lenguajes, aumentando mi amor por el desarrollo (particularmente por el frontend), pero no me caso con ningún lenguaje, es lo bueno de ser 'todo terreno'.",
   about_text_4:
     "Soy curioso, sincero (a veces demasiado...), comprometido, me considero responsable, amable y mi pilar es aprender, ya que me gusta aprender cosas nuevas y uno nunca deja de aprender.",
   about_text_5:
@@ -14,7 +14,7 @@ export const esp = {
   resume: "<HojaDeVida />",
   skills: "Habilidades",
   current_skills:
-    "Actualmente cuento con conocimientos en la siguientes herramientas y lenguajes...",
+    "Actualmente cuento con conocimientos en las siguientes herramientas y lenguajes...",
   front: "Desarrollo frontend",
   back: "Desarrollo backend",
   database: "SQL/NoSQL",
