@@ -39,7 +39,7 @@ export const projects = [
     description:
       "Proyecto que hace foco en el grupo de gente que se vio en la obligación de usar una computadora sin conocimientos previos durante el COVID-19",
     image: p5,
-    preview: "https://iegarcia.github.io/pc-pedia/",
+    preview: "https://pcpedia.vercel.app/",
     code: "https://github.com/iegarcia/pc-pedia",
   },
   {
