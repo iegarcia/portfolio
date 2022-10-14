@@ -37,7 +37,7 @@ const About = () => {
           </Col>
         </Row>
         <br />
-        <Arrow link="projects" />
+        <Arrow link="skills" />
       </Container>
     </div>
   );
