@@ -28,7 +28,7 @@ const About = () => {
             <p className="light about-text">{t("about_text_4")}</p>
             <p className="light about-text">{t("about_text_5")}</p>
             <a
-              href="https://1drv.ms/b/s!AnSV9i10O1Twg5JHp072KRPaxvmXIQ"
+              href={sessionStorage.getItem("link")}
               target="_blank"
               rel="noreferrer"
             >

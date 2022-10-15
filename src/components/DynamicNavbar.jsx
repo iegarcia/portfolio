@@ -17,6 +17,8 @@ const DynamicNavbar = () => {
   const [value, setValue] = useState(
     sessionStorage.getItem("switch") === "false" ? false : true
   );
+  const english = "https://1drv.ms/b/s!AnSV9i10O1Twg5QMOKW9P8RsHxdM0A?e=F8gwHr";
+  const spanish = "https://1drv.ms/b/s!AnSV9i10O1Twg5JHIfVPoVRioz8dig?e=sKiGsM";
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -26,13 +28,14 @@ const DynamicNavbar = () => {
       i18n.changeLanguage("en");
       setValue(event.target.checked);
       sessionStorage.setItem("switch", event.target.checked.toString());
+      sessionStorage.setItem("link", english);
     } else {
       i18n.changeLanguage("es");
       setValue(event.target.checked);
       sessionStorage.setItem("switch", event.target.checked.toString());
+      sessionStorage.setItem("link", spanish);
     }
   };
-
   useEffect(() => {
     if (location.pathname !== "/") {
       setColor("#007BD3");
