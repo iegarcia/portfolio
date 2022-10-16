@@ -4,13 +4,10 @@ export const esp = {
   about_text_1:
     "Genio, multimillonario, playboy, filántropo... es broma, mi nombre es Ignacio Encina García, soy de Buenos Aires, Argentina.",
   about_text_2:
-    "Soy un desarrollador full stack, en busca de nuevos retos y experiencias como tal, obtuve mis conocimientos en Digital House, el instituto ORT y también por méritos propios.",
+    "Obtuve mis conocimientos en Digital House, el instituto ORT y también por méritos propios. Profundicé mi conocimiento en lenguajes, aumentando mi amor por el desarrollo, pero no me caso con ningún lenguaje",
+
   about_text_3:
-    "En DH profundicé mi conocimiento en lenguajes, aumentando mi amor por el desarrollo (particularmente por el frontend), pero no me caso con ningún lenguaje, es lo bueno de ser 'todo terreno'.",
-  about_text_4:
-    "Soy curioso, sincero (a veces demasiado...), comprometido, me considero responsable, amable y mi pilar es aprender, ya que me gusta aprender cosas nuevas y uno nunca deja de aprender.",
-  about_text_5:
-    "En mi tiempo libre me gusta andar en bicicleta, bailo salsa y bachata (o al menos lo intento...), fan de Marvel, también soy amante de las buenas conversaciones y del café con leche y medialunas.",
+    "En mi tiempo libre bailo salsa y bachata (o al menos lo intento...), fan de Marvel, también soy amante de las buenas conversaciones y salir en bicicleta.",
   resume: "<HojaDeVida />",
   skills: "Habilidades",
   current_skills:

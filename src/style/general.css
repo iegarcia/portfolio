@@ -18,7 +18,7 @@
   font-size: 50px;
   text-align: center;
   padding-top: 25px;
-  animation: fadeInRight;
+  animation: rubberBand;
   animation-duration: 2s;
 }
 
@@ -31,4 +31,8 @@
 
 .light {
   color: white;
+}
+.navigation {
+  transform: rotate(90deg);
+  width: 30px;
 }

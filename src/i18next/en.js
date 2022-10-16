@@ -4,13 +4,10 @@ export const eng = {
   about_text_1:
     "Genius, billionaire, playboy, philanthropist... just kidding, my name is Ignacio Encina Garcia, I'm from Buenos Aires, Argentina.",
   about_text_2:
-    "I am a full stack developer, looking for new challenges and experiences as such, I got my knowledge at Digital House, the ORT institute and also on my own merit.",
+    "I got my knowledge at Digital House, the ORT institute and also on my own merit. I deepened my knowledge of languages, increasing my love for development. but I don't marry any language",
+
   about_text_3:
-    "In DH I deepened my knowledge of languages, increasing my love for development (particularly for the frontend), but I don't marry any language, it's the good thing about being 'all-rounder'.",
-  about_text_4:
-    "I am curious, sincere (sometimes too much...), committed, I consider myself responsible, friendly and my pillar would be learning, since I like to learn new things and one never stops learning.",
-  about_text_5:
-    "In my free time I like to ride my bike, I dance salsa and bachata (or at least I try...), a fan of Marvel, I am also a lover of good conversations and coffee with milk and croissants.",
+    "In my free time I dance salsa and bachata (or at least I try...), a fan of Marvel, I am also a lover of good conversations and ride my bike.",
   resume: "<Resume/>",
   skills: "Skills",
   current_skills: "I currently have the following set of skills and tools...",

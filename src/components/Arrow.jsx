@@ -4,11 +4,7 @@ const Arrow = ({ link }) => {
   return (
     <div className="d-flex justify-content-center">
       <a href={link}>
-        <img
-          src={arrow}
-          alt="arrow"
-          style={{ transform: "rotate(90deg)", width: "30px" }}
-        />
+        <img src={arrow} alt="arrow" className="navigation" />
       </a>
     </div>
   );

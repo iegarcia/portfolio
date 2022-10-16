@@ -13,9 +13,7 @@ const Contact = ({ show, close }) => {
           <Offcanvas.Title>{t("contact")}</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <h2 className="animate__animated animate__slideInDown">
-            {t("contact_text")}
-          </h2>
+          <h2>{t("contact_text")}</h2>
           <hr />
           <ContactModal />
         </Offcanvas.Body>

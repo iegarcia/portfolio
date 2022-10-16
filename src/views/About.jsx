@@ -1,14 +1,10 @@
 import { useTranslation } from "react-i18next";
 
 import Title from "../components/Title";
-
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
+import Arrow from "../components/Arrow";
+import { Container, Row, Col, Button } from "react-bootstrap";
 
 import aboutImage from "../assets/02.png";
-import Arrow from "../components/Arrow";
 
 const About = () => {
   const { t } = useTranslation();
@@ -16,7 +12,7 @@ const About = () => {
   return (
     <div className="app-background">
       <Container>
-        <Title text="about_me" />
+        <Title text="about_me" />{" "}
         <Row style={{ alignItems: "center" }}>
           <Col sm={4}>
             <img src={aboutImage} alt="about-me" className="aboutImage" />
@@ -25,8 +21,6 @@ const About = () => {
             <p className="light about-text">{t("about_text_1")}</p>
             <p className="light about-text">{t("about_text_2")}</p>
             <p className="light about-text">{t("about_text_3")}</p>
-            <p className="light about-text">{t("about_text_4")}</p>
-            <p className="light about-text">{t("about_text_5")}</p>
             <a
               href={sessionStorage.getItem("link")}
               target="_blank"

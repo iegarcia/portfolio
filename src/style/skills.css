@@ -3,8 +3,6 @@
 .skills-text {
   font-size: "35px";
   font-family: "Verdana", sans-serif;
-  animation: jackInTheBox;
-  animation-duration: 2s;
 }
 
 .image {
