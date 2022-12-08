@@ -21,7 +21,7 @@ export const projects = [
     description:
       "Proyecto integrador DH, e-commerce realizado con todas las tecnologías vistas durante la carrera de desarrollo web full stack.",
     image: p1,
-    preview: "https://phiorganic.herokuapp.com/",
+    preview: "https://phiiorganic.000webhostapp.com/",
     code: "https://github.com/iegarcia/pi.lara",
   },
   {
