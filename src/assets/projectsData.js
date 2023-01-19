@@ -12,8 +12,8 @@ export const projects = [
     description:
       "Portfolio que engloba los conocimientos adquiridos a lo de mi carrera como desarrollador, hecho con React y React Bootstrap",
     image: p4,
-    preview: "https://portfolio.vercel.app/",
-    code: "https://github.com/iegarcia/",
+    preview: "https://ignaciodev.vercel.app/",
+    code: "https://github.com/iegarcia/portfolio",
   },
   {
     id: 2,
