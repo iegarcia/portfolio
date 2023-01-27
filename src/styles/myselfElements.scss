@@ -1,0 +1,14 @@
+.myself {
+  display: flex;
+  justify-content: center;
+  background-color: #5bc595;
+
+  &-container {
+    width: 70%;
+    color: black;
+  }
+
+  &-content {
+    line-height: 2.5;
+  }
+}

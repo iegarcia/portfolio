@@ -1,0 +1,176 @@
+.home {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 3.5rem 0 3.5rem;
+  min-height: 100%;
+  padding-bottom: 4rem;
+  position: relative;
+
+  &::before {
+    content: "<Home>";
+    font-family: "La Belle Aurore", cursive;
+    color: #5bc595;
+    font-size: 1.8rem;
+    margin-left: -1.5em;
+    position: absolute;
+
+    @media screen and (max-width: 768px) {
+      margin-left: 0.5em;
+    }
+  }
+
+  &::after {
+    content: "</Home>";
+    font-family: "La Belle Aurore", cursive;
+    color: #5bc595;
+    font-size: 1.8rem;
+    position: absolute;
+    bottom: 0px;
+    right: 0.5em;
+
+    @media screen and (max-width: 768px) {
+      left: 0.5em;
+    }
+  }
+
+  &-container {
+    padding-top: 7em;
+    padding-left: 4em;
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+
+    &::before {
+      content: "<div>";
+      font-family: "La Belle Aurore", cursive;
+      color: #5bc595;
+      font-size: 1.8rem;
+      margin-left: -2em;
+
+      @media screen and (max-width: 768px) {
+        align-self: flex-start;
+        margin-left: 2em;
+      }
+    }
+
+    &::after {
+      content: "</div>";
+      font-family: "La Belle Aurore", cursive;
+      color: #5bc595;
+      font-size: 1.8rem;
+      align-self: flex-end;
+
+      @media screen and (max-width: 768px) {
+        align-self: flex-start;
+        margin-left: 2em;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      padding-top: 4em;
+      align-items: center;
+      justify-content: center;
+      padding-left: 0;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    padding: 0;
+    padding-bottom: 4rem;
+  }
+}
+
+.image-container {
+  padding-top: 6em;
+  padding-left: 9em;
+
+  @media screen and (max-width: 768px) {
+    visibility: hidden;
+    clear: both;
+    display: none;
+  }
+}
+
+.typewriter {
+  font-size: 2.8em;
+  color: white;
+  max-width: fit-content;
+  overflow: hidden;
+  border-right: 0.15em solid #5bc595;
+  white-space: nowrap;
+  letter-spacing: 0.05em;
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes deleting {
+    from {
+      width: 100%;
+    }
+    to {
+      width: 0;
+    }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #5bc595;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 2em;
+  }
+}
+
+.btn-contact {
+  background-color: #5bc595;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3em;
+  font-weight: bold;
+  height: 3.5em;
+  width: 10em;
+  vertical-align: center;
+  margin-top: 8em;
+  transition: 500ms;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 5em;
+  }
+}
+
+.scroll {
+  display: none;
+  color: white;
+  justify-content: center;
+  position: relative;
+  bottom: 3.5em;
+  cursor: pointer;
+
+  @media screen and (max-height: 768px) {
+    display: flex;
+  }
+}

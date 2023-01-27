@@ -1,0 +1,81 @@
+.nav {
+  background: #1a2629;
+  opacity: 85%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  font-size: 1.2em;
+  z-index: 999;
+
+  @media screen and (max-width: 768px) {
+    height: unset;
+  }
+
+  @media screen and (max-width: 960px) {
+    transition: 1.7s all ease;
+  }
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    width: 100%;
+    padding: 0 3.5rem 0 3.5rem;
+    z-index: 1;
+
+    @media screen and (max-width: 768px) {
+      height: unset;
+    }
+  }
+  &-logo {
+    background-image: url("../assets/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 5.5rem;
+    width: 5.5rem;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &-toggle {
+    background-color: #5bc595;
+  }
+
+  &-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &-item {
+    height: 3.6em;
+  }
+
+  &-link {
+    color: white !important;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    height: 100%;
+    padding: 0 1rem;
+    cursor: pointer;
+
+    &:hover {
+      border-bottom: 0.16em solid #389f97;
+    }
+
+    &.active {
+      border-bottom: 0.16em solid #389f97;
+      font-weight: bold;
+    }
+  }
+}

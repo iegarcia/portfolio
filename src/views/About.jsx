@@ -1,39 +1,44 @@
-import { useTranslation } from "react-i18next";
-
-import Title from "../components/Title";
-import Arrow from "../components/Arrow";
-import { Container, Row, Col, Button } from "react-bootstrap";
-
-import aboutImage from "../assets/02.png";
+import Heading from "../components/Heading";
+import aboutImage from "../assets/01.jpg";
 
 const About = () => {
-  const { t } = useTranslation();
-
   return (
-    <div className="app-background">
-      <Container>
-        <Title text="about_me" />{" "}
-        <Row style={{ alignItems: "center" }}>
-          <Col sm={4}>
-            <img src={aboutImage} alt="about-me" className="aboutImage" />
-          </Col>
-          <Col sm={8}>
-            <p className="light about-text">{t("about_text_1")}</p>
-            <p className="light about-text">{t("about_text_2")}</p>
-            <p className="light about-text">{t("about_text_3")}</p>
-            <a
-              href={sessionStorage.getItem("link")}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Button className="buttonDocument">{t("resume")}</Button>
-            </a>
-          </Col>
-        </Row>
-        <br />
-        <Arrow link="skills" />
-      </Container>
-    </div>
+    <>
+      <div className="about" id="about">
+        <div className="about-container">
+          <Heading text="About me" />
+          <div className="about-content">
+            <p>
+              Well-qualified Full Stack developer familiar with a wide range of
+              programming languages and utilities. Knowledgeable in development
+              requirements, backend and frontend. Collaborative team player with
+              technical skills offering a self-taught personality.
+            </p>
+            <p>
+              I am always looking for new challenges and love to learn as well
+              as try new things. I have developed projects autonomously,
+              participated in important projects such as{" "}
+              <strong>
+                <abbr title="App of the Province of Buenos Aires where you can view identification data, check the status of requested appointments, the type of vaccine administered and report symptoms related to COVID vaccination.">
+                  VacunatePBA
+                </abbr>
+              </strong>{" "}
+              and was in charge of the maintenance of projects already
+              completed.
+            </p>
+            <p>
+              I am curious, sincere, committed, responsible and growth-minded.{" "}
+              <br />
+              In my free time I like to ride my bike, I dance salsa and bachata
+              (or at least I try to...), Marvel fan.
+            </p>
+          </div>
+        </div>
+        <div className="about-container">
+          <img src={aboutImage} alt="me" className="about-image" />
+        </div>
+      </div>
+    </>
   );
 };
 

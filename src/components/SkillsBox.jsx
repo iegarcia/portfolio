@@ -1,89 +1,52 @@
-import { useTranslation } from "react-i18next";
-import { Accordion, Col, Row } from "react-bootstrap";
-import { images } from "../assets/skillsImages";
+import { Accordion } from "react-bootstrap";
+import { front, back, database, tools } from "../assets/data";
+
+const data = [
+  {
+    id: 0,
+    title: "Frontend",
+    content: front,
+  },
+  {
+    id: 1,
+    title: "Backend",
+    content: back,
+  },
+  {
+    id: 2,
+    title: "SQL/NoSQL",
+    content: database,
+  },
+  {
+    id: 3,
+    title: "Tools",
+    content: tools,
+  },
+];
+
+function renderItems(array) {
+  return array.map((e) => {
+    return e;
+  });
+}
 
 const SkillsBox = () => {
-  const { t } = useTranslation();
-
   return (
-    <>
-      <Accordion defaultActiveKey="0">
-        <Row>
-          <Col md={4} lg={6}>
-            <Accordion.Item eventKey="0">
-              <Accordion.Header>{t("front")}</Accordion.Header>
-              <Accordion.Body>
-                {images.slice(0, 7).map((image) => {
-                  return (
-                    <img
-                      title={image.name}
-                      className="image"
-                      src={image.source}
-                      alt={image.name}
-                      key={image.name}
-                    />
-                  );
-                })}
-              </Accordion.Body>
-            </Accordion.Item>
-          </Col>
-          <Col md={4} lg={6}>
-            <Accordion.Item eventKey="1">
-              <Accordion.Header>{t("back")}</Accordion.Header>
-              <Accordion.Body>
-                {images.slice(7, 11).map((image) => {
-                  return (
-                    <img
-                      title={image.name}
-                      className="image"
-                      src={image.source}
-                      alt={image.name}
-                      key={image.name}
-                    />
-                  );
-                })}
-              </Accordion.Body>
-            </Accordion.Item>
-          </Col>
-          <Col md={4} lg={6}>
-            <Accordion.Item eventKey="2">
-              <Accordion.Header>{t("database")}</Accordion.Header>
-              <Accordion.Body>
-                {images.slice(11, 16).map((image) => {
-                  return (
-                    <img
-                      title={image.name}
-                      className="image"
-                      src={image.source}
-                      alt={image.name}
-                      key={image.name}
-                    />
-                  );
-                })}
-              </Accordion.Body>
-            </Accordion.Item>
-          </Col>
-          <Col md={4} lg={6}>
-            <Accordion.Item eventKey="3">
-              <Accordion.Header>{t("tools")}</Accordion.Header>
-              <Accordion.Body>
-                {images.slice(16, 21).map((image) => {
-                  return (
-                    <img
-                      title={image.name}
-                      className="image"
-                      src={image.source}
-                      alt={image.name}
-                      key={image.name}
-                    />
-                  );
-                })}
-              </Accordion.Body>
-            </Accordion.Item>
-          </Col>
-        </Row>
-      </Accordion>
-    </>
+    <Accordion>
+      {data.map((e) => {
+        return (
+          <Accordion.Item eventKey={e.id}>
+            <Accordion.Header>{e.title}</Accordion.Header>
+            <Accordion.Body
+              className="d-flex"
+              style={{ justifyContent: "space-between" }}
+            >
+              {renderItems(e.content)}
+            </Accordion.Body>
+          </Accordion.Item>
+        );
+      })}
+    </Accordion>
   );
 };
 

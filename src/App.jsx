@@ -1,26 +1,19 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./views/Home";
-import About from "./views/About";
-import Skills from "./views/Skills";
-import Projects from "./views/Projects";
-import DynamicNavbar from "./components/DynamicNavbar";
-import "animate.css";
-import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./styles/App.scss";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-const App = () => {
+import SinglePage from "./views/SinglePage";
+
+function App() {
   return (
-    <div>
-      <BrowserRouter>
-        <DynamicNavbar />
+    <>
+      <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/" element={<SinglePage />} />
         </Routes>
-      </BrowserRouter>
-    </div>
+      </Router>
+    </>
   );
-};
+}
 
 export default App;

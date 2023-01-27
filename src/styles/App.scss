@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Encode Sans Expanded", sans-serif;
+}
+
+body {
+  background-color: #354c54;
+}
+
+.heading {
+  display: flex;
+  font-size: 4em;
+  align-items: center;
+  color: #54c08f;
+
+  @media screen and (max-width: 768px) {
+    align-self: center;
+    font-size: 2.5em;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 1em;
+    padding-left: 0;
+    align-self: center;
+    width: auto;
+
+    &:after {
+      content: "";
+      flex: 1;
+      background-color: #fff;
+      margin-left: 0.8em;
+      height: 1px;
+    }
+  }
+}
+
+@import url("navbarElements.scss");
+@import url("homeElements.scss");
+@import url("myselfElements.scss");
+@import url("aboutElements.scss");
+@import url("skillsElements.scss");
+@import url("workElements.scss");
+@import url("contactElements.scss");
+@import url("sideBarElements.scss");

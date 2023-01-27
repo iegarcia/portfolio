@@ -1,25 +1,35 @@
-import { useTranslation } from "react-i18next";
-
-import Container from "react-bootstrap/Container";
-
+import Heading from "../components/Heading";
 import SkillsBox from "../components/SkillsBox";
-import Title from "../components/Title";
-import Arrow from "../components/Arrow";
 
 const Skills = () => {
-  const { t } = useTranslation();
   return (
-    <div className="app-background skills">
-      <Container>
-        <Title text="skills" />
-        <h2 className="light text-center skills-text">{t("current_skills")}</h2>
+    <>
+      <div className="skills" id="skills">
+        <div className="skills-container">
+          <Heading text="Skills" />
+          <div className="skills-content">
+            <p>
+              #itworker since 2017, I started programming in 2019, where I
+              learned HTML, CSS, Bootstrap, JavaScript, PHP, Laravel, MySQL and
+              Git. In 2020 I dabbled in ASP.NET, SQL Server and API REST. I know
+              about OOP and design patterns. On the other hand, I have
+              experience in technical support regarding configuration and
+              assembly of equipment, remote assistance, backup, among others.
+            </p>
+            <p>
+              Full Stack at Digital House, Systems Analyst at ORT and I was also
+              self-taught. The MERN stack is one of my usual uses lately. I have
+              certifications from Acamica and UTN in office automation,
+              programming fundamentals and Photoshop.
+            </p>
+          </div>
+        </div>
+        <div className="skills-container">
+          <SkillsBox />
+        </div>
         <br />
-        <SkillsBox />
-        <br />
-        <h2 className="light text-center skills-text">{t("future_skills")}</h2>
-        <Arrow link="projects" />
-      </Container>
-    </div>
+      </div>
+    </>
   );
 };
 

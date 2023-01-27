@@ -1,0 +1,84 @@
+.contact {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 7rem 0 7rem;
+  min-height: 100%;
+  padding-bottom: 10rem;
+  position: relative;
+
+  &:before {
+    content: "<Contact>";
+    font-family: "La Belle Aurore", cursive;
+    color: #5bc595;
+    font-size: 1.8rem;
+    left: 0.5em;
+    position: absolute;
+
+    @media screen and (max-width: 768px) {
+      left: 0.5em;
+    }
+  }
+
+  &:after {
+    content: "</Contact>";
+    font-family: "La Belle Aurore", cursive;
+    color: #5bc595;
+    font-size: 1.8rem;
+    position: absolute;
+    bottom: 0;
+    right: 0.5em;
+
+    @media screen and (max-width: 768px) {
+      left: 0.5em;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+    padding: 0;
+    padding-bottom: 3rem;
+    align-items: center;
+  }
+
+  &-container {
+    padding-top: 4em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 768px) {
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: fit-content;
+    }
+
+    .social-container {
+      display: flex;
+      flex-direction: row;
+      gap: 0.5em;
+      width: 100%;
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+      }
+    }
+
+    .social-link {
+      text-align: center;
+      text-decoration: none;
+      margin: 1em 0;
+      padding: 1em 1.4em;
+      width: 100%;
+      border-radius: 0.8rem;
+      display: inline-block;
+      background-color: #389f97;
+      color: white;
+      font-size: larger;
+    }
+  }
+  &-content {
+    color: white;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
