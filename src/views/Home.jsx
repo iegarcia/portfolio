@@ -11,6 +11,7 @@ const roles = [
   "Front-end Developer",
   "Back-end Developer",
   "Technical Support",
+  "System Analyst"
 ];
 
 const Home = () => {
