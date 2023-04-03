@@ -15,10 +15,16 @@ const Work = () => {
       stack: ["React", "Bootstrap", "React icons", "Sass", "Arquitectura Flux"],
     },
     {
-      src: p1,
-      name: "Phi-Organic",
-      desc: "Fully functional e-commerce developed under MVC architecture and using Laravel framework. This project has most of the typical functionalities of an e-commerce, such as product listing, session profiles, search filter, among other things...",
-      stack: ["HTML", "CSS", "JavaScript", "PHP", "Laravel", "MySQL", "POO"],
+      src: p3,
+      name: "Warehouse Locator",
+      desc: "Warehouse Locator made with React, Firebase and Google Cloud Console, in this project you can upload new warehouses with a CSV file that includes information about their products and find the nearest 3 warehouses to one address that inserts.",
+      stack: [
+        "React",
+        "Firebase",
+        "Google Cloud Console",
+        "Google Maps API",
+        "OneRouteService",
+      ],
     },
     {
       src: p2,
@@ -33,10 +39,10 @@ const Work = () => {
       stack: ["Vue", "Quasar", "Material design", "MVVM"],
     },
     {
-      src: p3,
-      name: "Rick and Morty App",
-      desc: "Application with information about the show Rick and Morty, including details of its characters, episodes in which they appear, locations, etc. It has a dynamic pagination for easy navigation.",
-      stack: ["React", "Axios", "React bootstrap", "REST", "Arquitectura Flux"],
+      src: p1,
+      name: "Phi-Organic",
+      desc: "Fully functional e-commerce developed under MVC architecture and using Laravel framework. This project has most of the typical functionalities of an e-commerce, such as product listing, session profiles, search filter, among other things...",
+      stack: ["HTML", "CSS", "JavaScript", "PHP", "Laravel", "MySQL", "POO"],
     },
   ];
 
