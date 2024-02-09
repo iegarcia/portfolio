@@ -18,8 +18,8 @@ const Myself = () => {
             He prefers to train, practice and constantly improve himself.
           </p>
           <p>
-            He also goes out, then, hold on, because he likes to dance, go for
-            walks, see new places, chat and enjoy a latte.
+            He also goes out, because he likes to dance, go for walks, see new
+            places, chat and enjoy a latte.
           </p>
           <p>
             It's terrifying! So if you keep scrolling it's at your own risk 😉

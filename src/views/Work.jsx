@@ -13,6 +13,7 @@ const Work = () => {
       name: "Onepage portfolio",
       desc: "Development of a web application used as a portfolio to concentrate the diverse variety of projects, knowledge and technologies learned, applied and used since the beginning in the IT industry.",
       stack: ["React", "Bootstrap", "React icons", "Sass", "Arquitectura Flux"],
+      url: "https://ignaciodev.vercel.app/",
     },
     {
       src: p3,
@@ -25,24 +26,28 @@ const Work = () => {
         "Google Maps API",
         "OneRouteService",
       ],
+      url: "https://warehouse-software.vercel.app/",
     },
     {
       src: p2,
       name: "Stream App",
       desc: "Inspired by Disney +, a streaming application that displays a diverse dynamic catalog of movies, corresponding movie information, including trailers. It features session profiles with robust validations, categorization, etc.",
       stack: ["React", "React Bootstrap", "Firebase", "Axios", "Context API"],
+      url: "https://streeam-app.vercel.app/",
     },
     {
       src: p5,
       name: "PC Pedia",
       desc: "Encyclopedia with information about computer manipulation. Project that focuses on the group of people who were forced to use a computer without previous knowledge during COVID-19.",
       stack: ["Vue", "Quasar", "Material design", "MVVM"],
+      url: "https://pcpedia.vercel.app/",
     },
     {
       src: p1,
       name: "Phi-Organic",
       desc: "Fully functional e-commerce developed under MVC architecture and using Laravel framework. This project has most of the typical functionalities of an e-commerce, such as product listing, session profiles, search filter, among other things...",
       stack: ["HTML", "CSS", "JavaScript", "PHP", "Laravel", "MySQL", "POO"],
+      url: "https://phiiorganic.000webhostapp.com/",
     },
   ];
 
