@@ -1,5 +1,5 @@
 import Heading from "../components/Heading";
-import aboutImage from "../assets/01.jpg";
+import aboutImage from "../assets/01.png";
 
 const About = () => {
   return (
