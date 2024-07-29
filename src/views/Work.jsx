@@ -42,13 +42,6 @@ const Work = () => {
       stack: ["Vue", "Quasar", "Material design", "MVVM"],
       url: "https://pcpedia.vercel.app/",
     },
-    {
-      src: p1,
-      name: "Phi-Organic",
-      desc: "Fully functional e-commerce developed under MVC architecture and using Laravel framework. This project has most of the typical functionalities of an e-commerce, such as product listing, session profiles, search filter, among other things...",
-      stack: ["HTML", "CSS", "JavaScript", "PHP", "Laravel", "MySQL", "POO"],
-      url: "https://phiiorganic.000webhostapp.com/",
-    },
   ];
 
   return (
